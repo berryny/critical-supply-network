@@ -1,0 +1,5 @@
+Flask
+Flask-Assets
+Flask-Debug
+requests
+requests-html
