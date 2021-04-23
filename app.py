@@ -45,6 +45,21 @@ assets.register(bundles)
 def home():
     return render_template('pages/index.html')
 
+@app.route("/dashboard/")
+# Define the website pages
+def dashboard():
+    return render_template('pages/dashboard.html')
+
+@app.route("/login/")
+# Define the website pages
+def login():
+    return render_template('pages/login.html')
+
+@app.route("/register/")
+# Define the website pages
+def register():
+    return render_template('pages/register.html')
+
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
     app.run(threaded=True, port=5000, debug=True)

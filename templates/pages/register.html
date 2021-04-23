@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block title %}Registration{% endblock %}
+{% block content %}
+<div class="container px-4 py-1">
+  <h1 class="display-4 fw-bold lh-1 mb-3">Join the IoT Movement</h1>
+  <p class="col-lg-10 fs-4">Create an account</p>
+  <div class="row align-items-center g-5 py-5">
+    <div class="mx-auto">
+      <form class="p-5 border rounded-3 bg-light">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingCNameInput" placeholder="Company Name">
+          <label for="floatingCNameInput">Company Name</label>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingFNameInput" placeholder="First Name">
+              <label for="floatingFNameInput">First Name</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingLNameInput" placeholder="Last Name">
+              <label for="floatingLNameInput">Last Name</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingCAddressInput" placeholder="Company Address">
+          <label for="floatingCAddressInput">Company Address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingCityInput" placeholder="City">
+                <label for="floatingCityInput">City</label>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingZipInput" placeholder="Company Address">
+                <label for="floatingZipInput">Zip</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mb-3">
+          <!-- <label for="inputState" class="form-label">State</label> -->
+        </div>
+        <div class="form-floating mb-3">
+          <select id="inputState" class="form-select form-control-lg">
+            <option selected>Select State...</option>
+            <option>New York</option>
+            <option>New Jersey</option>
+            <option>N/A</option>
+          </select>
+          <label for="inputState">State</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <select id="inputCountry" class="form-select form-control-lg">
+            <option selected>Select Country...</option>
+            <option>Country 1</option>
+            <option>Country 2</option>
+            <option>Country 3</option>
+          </select>
+          <label for="inputCountry">Country</label>
+        </div>
+        <div class="form-floating mb-3">
+          <select id="floatingAccountInput" class="form-select form-control-lg">
+            <option selected>Choose...</option>
+            <option>Buyer</option>
+            <option>Seller</option>
+          </select>
+          <label for="floatingAccountInput">Account Type</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingEINInput" placeholder="Company Address">
+          <label for="floatingEINInput">Company EIN</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingEmailInput" placeholder="name@example.com">
+          <label for="floatingEmailInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+        <hr class="my-4">
+        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

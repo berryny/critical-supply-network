@@ -1,9 +1,230 @@
 {% extends "base.html" %}
-{% block title %}Home Page{% endblock %}
+{% block title %}Critical Supply Network{% endblock %}
 {% block content %}
-<div class="container-fluid my-4">
-  <div class="container">
-    <h1>Welcome to Python Flask Boiler Plate</h1>
-  </div>
+<div class="px-4 py-5 my-2 text-center hero-home text-white">
+    <h1 class="display-5 fw-bold">Critical Supply
+        Network</h1>
+    <div class="col-lg-8 mx-auto">
+        <p class="lead mb-4">Find the ones with the most!</p>
+        <form action="/#">
+            <div class="row">
+                <div class="col-md-3 m-0 p-0">
+                    <div class="dropdown">
+                        <button class="w-100 rounded-0 btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Supplier by
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Name</a></li>
+                            <li><a class="dropdown-item" href="#">Brand Name</a></li>
+                            <li><a class="dropdown-item" href="#">State</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7 m-0 p-0">
+                    <input class="form-control rounded-0 form-control-lg" list="datalistOptions" id="exampleDataList"
+                        placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+                <div class="col-md-2 m-0 p-0"><button type="submit" class="rounded-0 w-100 btn btn-lg btn-primary mb-3">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container col-xxl-8 px-4 py-1">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-1">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{url_for('static', filename='images/biden.jpg')}}" class="d-block mx-lg-auto img-fluid"
+                alt="president joe biden" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">US supply chains for vital goods</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+                popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                extensive prebuilt components, and powerful JavaScript plugins.</p>
+        </div>
+    </div>
+</div>
+<div class="container py-2" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Critical Industries</h2>
+
+    <div class="row row-cols-md-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+            <i class="bi text-light-blue flex-shrink-0 me-3 fas fa-biohazard fa-3x"></i>
+            <div>
+                <h4 class="fw-bold mb-0">Biological Preparedness
+                </h4>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <i class="bi text-light-blue flex-shrink-0 me-3 fas fa-atom fa-3x"></i>
+            <div>
+                <h4 class="fw-bold mb-0">Energy
+                </h4>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <i class="bi text-light-blue flex-shrink-0 me-3 fas fa-plane fa-3x"></i>
+            <div>
+                <h4 class="fw-bold mb-0">Defense
+                </h4>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <i class="bi text-light-blue flex-shrink-0 me-3 fas fa-utensils fa-3x"></i>
+            <div>
+                <h4 class="fw-bold mb-0">Food Production
+                </h4>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <i class="bi text-light-blue flex-shrink-0 me-3 fas fa-desktop fa-3x"></i>
+            <div>
+                <h4 class="fw-bold mb-0">Information Technology
+                </h4>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <i class="bi text-light-blue flex-shrink-0 me-3 fas fa-plus-square fa-3x"></i>
+            <div>
+                <h4 class="fw-bold mb-0">Public Health
+                </h4>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <i class="bi text-light-blue flex-shrink-0 me-3 fas fa-bus fa-3x"></i>
+            <div>
+                <h4 class="fw-bold mb-0">Transportation
+                </h4>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">Industry Leaders</h1>
+            <p class="lead">"Our country was so dependent on everyone else, we couldn’t even take care of
+                ourselves"<br>– Vinny B.</p>
+
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 position-relative overflow-hidden shadow-lg">
+            <div class="position-lg-absolute top-0 left-0 overflow-hidden">
+                <img class="d-block rounded-lg-3"
+                    src="{{url_for('static', filename='images/pexels-thisisengineering-3862627.jpg')}}" alt=""
+                    width="720">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container col-xl-10 col-xxl-8 px-4 py-1">
+    <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-5 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Join the IoT Movement</h1>
+            <p class="col-lg-10 fs-4">Create an account</p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-7">
+            <form class="p-md-5 border rounded-3 bg-light">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingCNameInput" placeholder="Company Name">
+                    <label for="floatingCNameInput">Company Name</label>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingFNameInput" placeholder="First Name">
+                            <label for="floatingFNameInput">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingLNameInput" placeholder="Last Name">
+                            <label for="floatingLNameInput">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingCAddressInput" placeholder="Company Address">
+                    <label for="floatingCAddressInput">Company Address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingCityInput" placeholder="City">
+                                <label for="floatingCityInput">City</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingZipInput"
+                                    placeholder="Company Address">
+                                <label for="floatingZipInput">Zip</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <!-- <label for="inputState" class="form-label">State</label> -->
+                </div>
+                <div class="form-floating mb-3">
+                    <select id="inputState" class="form-select form-control-lg">
+                        <option selected>Select State...</option>
+                        <option>New York</option>
+                        <option>New Jersey</option>
+                        <option>N/A</option>
+                    </select>
+                    <label for="inputState">State</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <select id="inputCountry" class="form-select form-control-lg">
+                        <option selected>Select Country...</option>
+                        <option>Country 1</option>
+                        <option>Country 2</option>
+                        <option>Country 3</option>
+                    </select>
+                    <label for="inputCountry">Country</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select id="floatingAccountInput" class="form-select form-control-lg">
+                        <option selected>Choose...</option>
+                        <option>Buyer</option>
+                        <option>Seller</option>
+                    </select>
+                    <label for="floatingAccountInput">Account Type</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingEINInput" placeholder="Company Address">
+                    <label for="floatingEINInput">Company EIN</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmailInput" placeholder="name@example.com">
+                    <label for="floatingEmailInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                <hr class="my-4">
+                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+            </form>
+        </div>
+    </div>
 </div>
 {% endblock %}
