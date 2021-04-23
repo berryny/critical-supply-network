@@ -6,4 +6,6 @@ __pycache__
 .env
 *.env
 
+/build
+/build/*
 /static/.webassets-cache
