@@ -45,6 +45,11 @@ assets.register(bundles)
 def home():
     return render_template('pages/index.html')
 
+@app.route("/about/")
+# Define the website pages
+def about():
+    return render_template('pages/about.html')
+
 @app.route("/results/")
 # Define the website pages
 def search_results():
