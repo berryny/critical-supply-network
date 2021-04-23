@@ -4642,3 +4642,7 @@ readers do not read off random characters that represent icons */
     padding: 15px;
     margin: auto;
 }
+
+#sidebarMenu {
+    font-size: 0.8rem;
+}
