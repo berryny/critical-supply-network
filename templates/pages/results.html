@@ -49,12 +49,20 @@
       <div class="card h-100">
         <img src="{{url_for('static', filename='images/biden.jpg')}}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Haggard &amp; Stocking Associates, Inc. <span class="badge bg-warning text-dark">FDA</span> <span class="badge bg-warning text-dark">NIOSH</span></h5>
+          <h5 class="card-title"><a href="/index">Haggard &amp; Stocking Associates, Inc.</a> <span class="badge bg-warning text-dark">FDA</span> <span class="badge bg-warning text-dark">NIOSH</span></h5>
           <h6 class="card-title text-light-blue">Product Name</h6>
           <p class="card-text">Product description</p>
         </div>
         <div class="card-footer">
-          <small class="text-muted">Available: <span class="badge rounded-pill bg-primary">10</span></small>
+          <div class="row">
+            <div class="col-md-6">
+              <small class="text-muted">Available: <span class="badge rounded-pill bg-primary">10</span></small>
+
+            </div>
+            <div class="col-md-6 text-center">
+              <a href="/buy" class="btn btn-success btn-sm" role="button" aria-disabled="true">View Supplier</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

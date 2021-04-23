@@ -50,6 +50,11 @@ def home():
 def search_results():
     return render_template('pages/results.html')
 
+@app.route("/buy/")
+# Define the website pages
+def buy():
+    return render_template('pages/buy.html')
+
 @app.route("/dashboard/")
 # Define the website pages
 def dashboard():
