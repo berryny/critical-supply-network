@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Search Result{% endblock %}
+{% block content %}
+<div class="px-4 py-5 my-2 text-center hero-home text-white">
+  <h1 class="display-5 fw-bold">Critical Supply
+    Network</h1>
+  <div class="col-lg-8 mx-auto">
+    <p class="lead mb-4">Find the ones with the most!</p>
+    <form action="/results">
+      <div class="row">
+        <div class="col-md-4 m-0 p-0">
+          <div class="dropdown">
+            <button class="w-100 rounded-0 btn btn-lg btn-secondary dropdown-toggle" type="button"
+              id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Product Name
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Supplier</a></li>
+              <li><a class="dropdown-item" href="#">State</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 m-0 p-0">
+          <input class="form-control rounded-0 form-control-lg" list="datalistOptions" id="exampleDataList"
+            placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+          </datalist>
+        </div>
+        <div class="col-md-2 m-0 p-0"><button type="submit"
+            class="rounded-0 w-100 btn btn-lg btn-primary mb-3">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+</div>
+<div class="container">
+
+
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{url_for('static', filename='images/biden.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Haggard &amp; Stocking Associates, Inc. <span class="badge bg-warning text-dark">FDA</span> <span class="badge bg-warning text-dark">NIOSH</span></h5>
+          <h6 class="card-title text-light-blue">Product Name</h6>
+          <p class="card-text">Product description</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Available: <span class="badge rounded-pill bg-primary">10</span></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{url_for('static', filename='images/biden.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Company Name</h5>
+          <h6 class="card-title text-light-blue">Product Name</h6>
+          <p class="card-text">Product description</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Available: <span class="badge rounded-pill bg-primary">10</span></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{url_for('static', filename='images/biden.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Company Name</h5>
+          <h6 class="card-title text-light-blue">Product Name</h6>
+          <p class="card-text">Product description</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Available: <span class="badge rounded-pill bg-primary">10</span></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
