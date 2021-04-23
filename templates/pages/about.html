@@ -4,15 +4,44 @@
 <div class="container col-xxl-8 px-4 py-1">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
     <div class="col-10 col-sm-8 col-lg-6">
-      <img src="{{url_for('static', filename='images/securewearusa.jpg')}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      <img src="{{url_for('static', filename='images/securewearusa.jpg')}}" class="d-block mx-lg-auto img-fluid"
+        alt="Bootstrap Themes" width="700" height="500" loading="lazy">
     </div>
     <div class="col-lg-6">
-      <h1 class="display-5 fw-bold lh-1 mb-3">"Our country was so dependent on everyone else, we couldn't even take care of ourselves"<br><small>– Vinny B</small></h1>
+      <h1 class="display-5 fw-bold lh-1 mb-3">"Our country was so dependent on everyone else, we couldn't even take care
+        of ourselves"<br><small>– Vinny B</small></h1>
       <p class="lead">Small manufacturers face many barriers to entry in the current procurement process</p>
     </div>
   </div>
 </div>
-<div class="container-fluid my-4">
-
+<div class="container my-4">
+  <h3>Objective</h3>
+  <ol>
+    <li>
+      Preparing a 100 image mask dataset - <br>
+      (i) downloading the images of masks from google<br>
+      (ii) clicking some images of masks from different angles(it'd be good if u are having some defective masks)
+    </li>
+    <li>
+      Using GANs on 100 image dataset to generate fake images of defective masks
+    </li>
+    <li>
+      Building a computer vision model on the above prepared dataset which has two classes, whether the mask is
+      ready for use or not.
+    </li>
+    <li>
+      Quantizing the model to use it on a raspberry pi or a webcam.
+    </li>
+    <li>
+      Using an object counting sensor on a conveyor belt. (For counting objects we'd need programming in
+      raspberry pi)
+    </li>
+    <li>
+      Updating the logistics on the website.
+    </li>
+    <li>
+      Using Machine Learning for exploratory data analysis and getting prepared for future pandemics.
+    </li>
+  </ol>
 </div>
 {% endblock %}
