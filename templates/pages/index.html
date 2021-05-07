@@ -2,58 +2,79 @@
 {% block title %}Critical Supply Network{% endblock %}
 {% block content %}
 <div class="px-4 py-5 my-2 text-center hero-home text-white">
-    <h1 class="display-5 fw-bold">Critical Supply
+    <h1 class="display-1 fw-bold">Critical Supply
         Network</h1>
-    <div class="col-lg-8 mx-auto">
-        <p class="lead mb-4">Find the ones with the most!</p>
-        <form action="/results">
-            <div class="row">
-                <div class="col-md-4 m-0 p-0">
-                    <div class="dropdown">
-                        <button class="w-100 rounded-0 btn btn-lg btn-secondary dropdown-toggle" type="button"
-                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Product Name
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Supplier</a></li>
-                            <li><a class="dropdown-item" href="#">State</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 m-0 p-0">
-                    <input class="form-control rounded-0 form-control-lg" list="datalistOptions" id="exampleDataList"
-                        placeholder="Type to search...">
-                    <datalist id="datalistOptions">
-                        <option value="mask">
-                        <option value="face shields">
-                        <option value="gloves">
-                    </datalist>
-                </div>
-                <div class="col-md-2 m-0 p-0"><button type="submit"
-                        class="rounded-0 w-100 btn btn-lg btn-primary mb-3">Search</button>
-                </div>
-            </div>
-        </form>
+</div>
+<div class="container">
+    <p class="lead text-center py-5 fs-3">A centralized inventory management system for all critical supplies</p>
+</div>
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Our Mission</h4>
+            <p>We aim to close the supply gaps that were exposed during the Covid 19 pandemic by offering affordable
+                inventory tracking management for all suppliers, large and small and an online marketplace connecting
+                buyers, such as government agencies, hospitals and schools to vetted manufacturers large and small</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Benefits of Inventory Management</h4>
+            <p>Better Inventory Accuracy: With solid inventory management, you know what's in stock and order only the
+                amount of inventory you need to meet demand. </p>
+            <p>Reduced Risk of Overselling: Inventory management helps track what's in stock and what's on back order,
+                so you don't oversell products.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Access for Small Manufacturers</h4>
+            <p>Smaller manufacturers often miss out on the benefits of inventory management due to the high costs of
+                technology implementation. We offer an affordable solution that enables these small and mid-size
+                manufacturers to benefit from the analytics and insights that has previously only been available to
+                larger companies.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Public and Private Sector in one place</h4>
+            <p>The federal government maintains aa National Stockpile for critical supplies,, but fails to accurately
+                assess the supply capabilities of the private sector. The Critical Supply Network gives an overview of
+                critical supply levels. </p>
+        </div>
+    </div>
+</div>
+<div class="container col-xxl-8 px-4 py-1">
+    <div class="row flex-lg-row align-items-center g-5 py-1">
+        <div class="col-12 col-sm-8 col-lg-6">
+            <img src="{{url_for('static', filename='images/how_it_works.jpg')}}" class="d-block mx-lg-auto img-fluid"
+                alt="how it works" width="700" height="" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">How it Works</h1>
+            <p class="lead">Sensors placed on machinery send real-time inventory data to the Critical Supply Network,
+                which can be accessed by the manufacturer with data analytics and machine learning to make important
+                insights about production quantities and industry demand.</p>
+        </div>
     </div>
 </div>
 <div class="container col-xxl-8 px-4 py-1">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-1">
         <div class="col-12 col-sm-8 col-lg-6">
-            <img src="{{url_for('static', filename='images/biden.jpg')}}" class="d-block mx-lg-auto img-fluid"
-                alt="president joe biden" width="700" height="500" loading="lazy">
+            <img src="{{url_for('static', filename='images/marketplace.jpg')}}" class="d-block mx-lg-auto img-fluid"
+                alt="A Marketplace of fairness and efficiency" width="700" height="" loading="lazy">
         </div>
         <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">US supply chains for vital goods</h1>
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-                popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-                extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <h1 class="display-5 fw-bold lh-1 mb-3">A Marketplace of fairness and efficiency</h1>
+            <p class="lead">Our vendors are vetted, to ensure products meet industry standards, which eliminates the
+                risk of economic loss from buying counterfeit products. Real-time inventory levels help manufacturers
+                adjust production levels, reducing waste or meeting demand. Our marketplace connects buyers and sellers
+                using machine learning technology to recommend the best fit.</p>
         </div>
     </div>
 </div>
+<div class="container text-center my-5">
+    <h2 class="display-4">Critical Industries</h2>
+    <p class="lead text-center fs-3">To reduce the National Security threat, President Biden has ordered a review
+        of the following industries with high foreign dependency: Semiconductors, batteries, pharmaceuticals and
+        materials</p>
+</div>
 <div class="container py-2" id="icon-grid">
-    <h2 class="pb-2 border-bottom">Critical Industries</h2>
-
-    <div class="row row-cols-md-4 g-4 py-5">
+    <div class="row row-cols-md-4 g-4 py-2">
         <div class="col d-flex align-items-start">
             <i class="bi text-light-blue flex-shrink-0 me-3 fas fa-biohazard fa-3x"></i>
             <div>
@@ -106,151 +127,17 @@
 
     </div>
 </div>
-<div class="container my-5">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h1 class="display-4 fw-bold lh-1">Industry Leaders</h1>
-            <p class="lead">"It's about resilience, identifying possible points of vulnerabilities in our supply chains
-                and making sure we have the backup alternatives or workarounds in place."<br />- Biden</p>
+<div class="container-fluid my-5 py-5 bg-light text-dark">
+    <div class="row align-items-center">
+        <div class="col-md-7">
+            <p class="lead text-center fs-3">Contact us today to learn more about how your business can benefit from our
+                platform</p>
         </div>
-        <div class="col-lg-4 offset-lg-1 p-0 position-relative overflow-hidden shadow-lg">
-            <div class="position-lg-absolute top-0 left-0 overflow-hidden">
-                <img class="d-block rounded-lg-3"
-                    src="{{url_for('static', filename='images/pexels-thisisengineering-3862627.jpg')}}" alt=""
-                    width="720">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container col-xl-10 col-xxl-8 px-4 py-1">
-    <div class="row align-items-center g-5 py-5">
-        <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="display-4 fw-bold lh-1 mb-3">Join the IoT Movement</h1>
-            <p class="col-lg-10 fs-4">Create an account for Real-World Solutions</p>
-            <div class="row">
-                <div class="col-md-4">
-                    Connects buyers and sellers quickly
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        Reduce barriers for small suppliers
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        Display live inventory updates
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        Reduce price gouging and fake products
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        Economic efficiency reduces costs
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        Faster response to changes in the market
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-10 mx-auto col-lg-6">
-            <form class="p-md-5 border rounded-3 bg-light">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingCNameInput" placeholder="Company Name">
-                    <label for="floatingCNameInput">Company Name</label>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingFNameInput" placeholder="First Name">
-                            <label for="floatingFNameInput">First Name</label>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingLNameInput" placeholder="Last Name">
-                            <label for="floatingLNameInput">Last Name</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingCAddressInput" placeholder="Company Address">
-                    <label for="floatingCAddressInput">Company Address</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingCityInput" placeholder="City">
-                                <label for="floatingCityInput">City</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingZipInput"
-                                    placeholder="Company Address">
-                                <label for="floatingZipInput">Zip</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                    <!-- <label for="inputState" class="form-label">State</label> -->
-                </div>
-                <div class="form-floating mb-3">
-                    <select id="inputState" class="form-select form-control-lg">
-                        <option selected>Select State...</option>
-                        <option>New York</option>
-                        <option>New Jersey</option>
-                        <option>N/A</option>
-                    </select>
-                    <label for="inputState">State</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <select id="inputCountry" class="form-select form-control-lg">
-                        <option selected>Select Country...</option>
-                        <option>Country 1</option>
-                        <option>Country 2</option>
-                        <option>Country 3</option>
-                    </select>
-                    <label for="inputCountry">Country</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <select id="floatingAccountInput" class="form-select form-control-lg">
-                        <option selected>Choose...</option>
-                        <option>Buyer</option>
-                        <option>Seller</option>
-                    </select>
-                    <label for="floatingAccountInput">Account Type</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingEINInput" placeholder="Company Address">
-                    <label for="floatingEINInput">Company EIN</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingEmailInput" placeholder="name@example.com">
-                    <label for="floatingEmailInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                </div>
-                <div class="checkbox mb-3">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Remember me
-                    </label>
-                </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-                <hr class="my-4">
-                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-            </form>
+        <div class="col-md-5">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <a class="btn btn-primary me-md-2" type="button" href="/login/">Join Today</a>
+                <a class="btn btn-outline-primary" type="button" href="/about/">Contact us</a>
+              </div>
         </div>
     </div>
 </div>

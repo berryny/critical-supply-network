@@ -4,9 +4,9 @@
 }
 .hero-home {
     background-color: black;
-    background-image: linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../images/pexels-christina-morillo-1181354.jpg);
+    background-image: linear-gradient(180deg,rgba(92, 165, 214,.3),rgba(92, 165, 214,.3)),url(../images/pexels-christina-morillo-1181354.jpg);
     background-size: cover;
-    background-position: top left;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 .form-signin {
